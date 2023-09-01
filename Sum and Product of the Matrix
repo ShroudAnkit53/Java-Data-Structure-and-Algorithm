@@ -1,0 +1,51 @@
+Here, we find the sum and products of the elements present in the matrix
+
+// Print 3x3 matrix and find out the sum of all elements present in the matrix
+
+import java.util.Scanner;
+public class Sum_Matrix {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows: ");
+        int row = sc.nextInt();
+        System.out.println("Enter the number of columns: ");
+        int col = sc.nextInt();
+        int[][]arr = new int[row][col];
+        int sum = 0;
+        System.out.println("Enter elements of an Array: ");
+        for(int i=0; i<row; i++){
+            for(int j=0; j<col; j++){
+                arr[i][j]=sc.nextInt();
+                System.out.print(arr[i][j]+" ");
+                sum += arr[i][j];
+            }
+            System.out.println();
+        }
+        System.out.println("The sum of the elements in the matrix is: "+sum);
+        }
+}
+
+// Print 3x3 matrix and find out the product of all elements present in the matrix
+
+import java.util.Scanner;
+public class Product_Matrix {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows: ");
+        int row = sc.nextInt();
+        System.out.println("Enter the number of columns: ");
+        int col = sc.nextInt();
+        int[][]arr = new int[row][col];
+        int product = 1;
+        System.out.println("Enter elements of an Array: ");
+        for(int i=0; i<row; i++){
+            for(int j=0; j<col; j++){
+                arr[i][j]=sc.nextInt();
+                System.out.print(arr[i][j]+" ");
+                product *= arr[i][j];
+            }
+            System.out.println();
+        }
+        System.out.println("The product of the elements in the matrix is: "+product);
+        }
+}
