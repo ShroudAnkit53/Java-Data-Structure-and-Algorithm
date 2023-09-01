@@ -1,0 +1,27 @@
+// Find out the element in 1-D array through Linear Search
+
+public class LinearSearch {
+    public static int linearsearch(int[]array , int target){
+        for(int i=0; i<array.length;i++){
+            if(array[i]==target){
+                return i; // If item found it will return the index
+            }
+        }
+        return -1; // If item not found
+    }
+    public static void main(String[]args){
+    int[]arr={2,5,8,9,4,10};
+    for(int i=0; i<arr.length;i++){
+        System.out.print(arr[i]+" ");
+    }
+    int target = 10;
+    System.out.println("\nTarget element is: "+target);
+    int index=linearsearch(arr, target);
+    if(index!=-1){
+        System.out.println("\nTarget item found at index: "+index);
+    }
+    else{
+        System.out.println("\nTarget item not found");
+    }
+    }
+}
